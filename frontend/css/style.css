@@ -1,0 +1,16 @@
+a {
+  color: white;
+}
+a:link {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: white;
+}
+.card-columns {
+  column-count: 3;
+}
+.navbar-purple {
+  background: #563d7c;
+}

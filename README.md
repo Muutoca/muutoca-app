@@ -41,7 +41,7 @@ First, clone this repository and then enter it:
 Create a virtual environment, activate it:
 
 ```bash
-~/muutoca-web$ python -m venv venv
+~/muutoca-web$ python3 -m venv venv
 ~/muutoca-web$ source venv/bin/activate
 ```
 

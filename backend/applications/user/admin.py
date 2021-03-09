@@ -10,7 +10,7 @@ class UserAdmin(custom_admin.UserAdmin):
   add_form = UserCreationForm
   model = User
   fieldsets = custom_admin.UserAdmin.fieldsets + (
-    ("User custom fields", {"fields": ("ein",
+    ("User custom fields", {"fields": ("ein_number",
                                        "address_latitude",
                                        "address_longitude",
                                        "address_zipcode",

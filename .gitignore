@@ -133,3 +133,4 @@ node_modules
 .next
 yarn-error.log
 .env
+backend/db.muutoca

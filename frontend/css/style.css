@@ -14,3 +14,22 @@ a:hover {
 .navbar-purple {
   background: #563d7c;
 }
+
+/* login from */
+
+.form-login {
+  margin-top: 20px;
+  border: 1px #563d7c solid;
+  padding: 50px;
+  width: 50%;
+}
+
+.btn-login {
+  color: #fff;
+  background-color: #563d7c;
+  border-color: #9173bd;
+}
+
+.alert {
+  margin-top: 20px;
+}

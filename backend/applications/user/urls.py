@@ -6,6 +6,6 @@ from rest_framework_simplejwt.views import (
 
 user_api_endpoints = [
     url(r'^api/v1/', include('djoser.urls')),
-    url(r'^api/v1/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    url(r'^api/v1/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    url(r'^api/v1/login/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    url(r'^api/v1/refresh-token/', TokenRefreshView.as_view(), name='token_refresh'),
 ]

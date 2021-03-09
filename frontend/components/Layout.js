@@ -4,6 +4,7 @@ import { Container, Nav, NavItem } from 'reactstrap';
 
 const Layout = (props) => {
   const title = 'Welcome to Muutoca';
+
   return (
     <>
       <Head>

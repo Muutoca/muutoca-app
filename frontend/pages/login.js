@@ -17,6 +17,7 @@ const Login = () => {
   const [loginError, setLoginError] = useState('');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+
   function handleSubmit(e) {
     e.preventDefault();
 
@@ -33,11 +34,12 @@ const Login = () => {
       .then((response) => {
         setLoginError('');
         const token = response.data.access;
-        cookie.set('token', token, { expires: 1 });
-        Router.push('/');
+        cookie.set('token', token, { expires: 2, sameSite: 'strict' });
+        Router.push('/dashboard');
       })
       .catch((error) => {
         setLoginError('Verify your email or password');
+        //TODO send 'error' to loggin server
       });
   }
 
@@ -70,11 +72,7 @@ const Login = () => {
         <Button className="btn-login" type="submit">
           Submit
         </Button>
-        {loginError && (
-          <p>
-            <Alert color="danger">{loginError}</Alert>
-          </p>
-        )}
+        {loginError && <Alert color="danger">{loginError}</Alert>}
       </Form>
     </Container>
   );
